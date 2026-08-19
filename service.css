@@ -1,0 +1,4 @@
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(16, 185, 129, 0.2);
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rehdors Logistics Solution Limited</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index2.css">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-error": "#ffffff",
+                "on-primary-fixed": "#2a1700",
+                "error-container": "#ffdad6",
+                "background": "#f8f9fa",
+                "on-tertiary-fixed-variant": "#1f477b",
+                "on-surface": "#191c1d",
+                "outline": "#867461",
+                "on-secondary": "#FFFFFF",
+                "on-tertiary": "#FFFFFF",
+                "on-secondary-fixed-variant": "#005236",
+                "tertiary-fixed": "#d5e3ff",
+                "surface-tint": "#855300",
+                "surface-container-highest": "#e1e3e4",
+                "inverse-surface": "#2e3132",
+                "primary": "#855300",
+                "surface-dim": "#d9dadb",
+                "surface": "#f8f9fa",
+                "on-primary": "#ffffff",
+                "tertiary-fixed-dim": "#a7c8ff",
+                "on-secondary-container": "#00714d",
+                "outline-variant": "#d8c3ad",
+                "inverse-on-surface": "#f0f1f2",
+                "error": "#EF4444",
+                "on-primary-fixed-variant": "#653e00",
+                "surface-container-low": "#f3f4f5",
+                "inverse-primary": "#ffb95f",
+                "tertiary": "#3a5f94",
+                "secondary-container": "#6cf8bb",
+                "on-background": "#191c1d",
+                "on-primary-container": "#613b00",
+                "surface-bright": "#f8f9fa",
+                "surface-variant": "#e1e3e4",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#001b3c",
+                "secondary-fixed-dim": "#4edea3",
+                "primary-fixed": "#ffddb8",
+                "primary-container": "#f59e0b",
+                "on-surface-variant": "#534434",
+                "surface-container-high": "#e7e8e9",
+                "on-secondary-fixed": "#002113",
+                "on-tertiary-container": "#1b4477",
+                "primary-fixed-dim": "#ffb95f",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-container": "#8fb2ed",
+                "surface-container": "#edeeef",
+                "secondary-fixed": "#6ffbbe",
+                "secondary": "#006c49"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "xs": "4px",
+                "base": "8px",
+                "gutter": "24px",
+                "xl": "80px",
+                "md": "24px",
+                "sm": "12px",
+                "lg": "48px",
+                "container-max": "1200px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "caption": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Inter"
+                ],
+                "headline-xl": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "caption": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-xl": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface sticky top-0 w-full z-50 shadow-sm transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
+<!-- Brand -->
+<a class="flex items-center gap-sm hover:opacity-90 transition-opacity" href="#">
+<img alt="Rehdors Logistics Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe90Yc6EmO60EpHJlMNGBdAoCDnZgnoPfdO2es88HfTnGmVnpleFJIbVclMM60NhE-hgKHS2eEphb7UhM4KyibPN2CEkw5XaLQvf8EvbCTfNKNYFV1BScD9yFa-E8y1KRLlYeMqiEnrOuk6NNPJoDdgVKVJkCBwiHEZrJwD0vha3oE7v6jqkeKRfOifJa806lHni4Kp9VO4Dd4r9Ad85LQwUnWcuSq2TTKy0TBZv19S4lrn7hPsUVMta8ZN2DT3cD0tw">
+<span class="sr-only">Rehdors Logistics Solution Limited</span>
+<span class="font-headline-md text-headline-md text-on-surface hidden sm:block"><span class="text-secondary">Rehdors</span> <span class="text-primary-container">Logistics</span></span></a>
+<!-- Desktop Links -->
+<ul class="hidden md:flex items-center gap-lg font-body-md text-body-md">
+<li class=""><a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary dark:border-primary-fixed-dim pb-1 block" href="index.html">Home</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors block" href="about.html">About</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors block" href="service.html">Services</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors block" href="location.html">Location</a></li>
+</ul>
+<!-- Actions -->
+<div class="hidden md:flex items-center">
+<a class="bg-primary-container text-on-primary-container hover:bg-primary-container/90 active:scale-95 transition-all px-6 py-3 rounded-lg font-label-md text-label-md shadow-sm" href="quote.html">
+                    Get a Quote
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:bg-surface-container rounded-DEFAULT"></button>
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface-container-lowest border-t border-surface-variant">
+  <a href="index.html" class="text-primary font-bold">Home</a>
+  <a href="about.html" class="text-on-surface-variant">About</a>
+  <a href="service.html" class="text-on-surface-variant">Services</a>
+  <a href="location.html" class="text-on-surface-variant">Location</a>
+  <a href="quote.html" class="bg-primary-container text-on-primary-container text-center py-3 rounded-lg font-label-md">Get a Quote</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface py-xl overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-xl items-center relative z-10">
+<div class="flex flex-col items-start gap-lg">
+<div class="flex flex-col gap-sm">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] icon-fill">rocket_launch</span>
+                            Global Logistics Partner
+                        </span>
+<h1 class="font-headline-xl text-headline-xl md:text-[56px] md:leading-[64px] text-on-surface max-w-[600px]"><span class="text-secondary">Rehdors</span> <span class="text-primary-container">Logistics</span> <span class="text-on-tertiary-fixed">Solution Limited</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[500px]">is commited to providing high qualitymartime services for the oil and gas industry and other industries in Nigeria and beyound. This entails commitment to the requirements of our Quality management system and improvement ofits effectiveness</p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-md w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center bg-primary-container text-on-primary-container hover:bg-primary-container/90 shadow-md hover:shadow-lg active:translate-y-[1px] transition-all px-8 py-4 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2" href="#">
+                            Get a Quote
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto text-center border-2 border-secondary text-secondary hover:bg-secondary/5 active:bg-secondary/10 transition-colors px-8 py-4 rounded-lg font-label-md text-label-md" href="#services">
+                            Our Services
+                        </a>
+</div>
+
+</div>
+<div class="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="A professional maritime photograph of a large, modern oil tanker ship (VLCC) at sea, bright daylight, calm ocean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAszR1SyabXS2BlInCm51_-J95zb_DaRDpeERvL_iwMjq7tnDato-1FWwyYJ7oKqGq-q1k5TRPjAhiXNHTjnxUvmiJS5JatEGqOlf2-_Ep-eyHIxZnQVyRurVjmBm4RbxsTMBkycyu5XeRE57W4ySkA-ITptZRssIcKMv7jmtpwtX9WgU9hAXZmgq7ZHojC8TwCpzTAX3eakxs3F7Ny907ioi3et5Q23tNBk5ngP95RQxLrC_beTxSV">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<!-- Floating Badge -->
+
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-secondary py-lg border-y border-white/10">
+<div class="max-w-container-max mx-auto px-gutter flex flex-wrap justify-between text-center">
+<div class="flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-4xl group-hover:-translate-y-1 transition-transform text-primary-container" data-stitch-orig-opacity="0">workspace_premium</span>
+<span class="font-headline-lg text-headline-lg text-primary-container">7+</span>
+<span class="font-body-md text-body-md text-on-secondary/80">Years Experience</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-4xl group-hover:-translate-y-1 transition-transform text-primary-container">local_shipping</span>
+<span class="font-headline-lg text-headline-lg text-primary-container">1k+</span>
+<span class="font-body-md text-body-md text-on-secondary/80">Shipments Cleared</span>
+</div>
+
+<div class="flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-4xl group-hover:-translate-y-1 transition-transform text-primary-container">public</span>
+<span class="font-headline-lg text-headline-lg text-primary-container">5+</span>
+<span class="font-body-md text-body-md text-on-secondary/80">Regions Covered</span>
+</div>
+</div>
+</section>
+<!-- What We Do -->
+<section class="py-xl bg-background" id="services"><div class="max-w-container-max mx-auto px-gutter flex flex-col gap-lg"><div class="text-center max-w-[700px] mx-auto flex flex-col gap-sm"><h2 class="font-headline-lg text-headline-lg text-on-surface">Our Quality Commitment</h2><p class="font-body-md text-body-md text-on-surface-variant">We are dedicated to excellence through rigorous quality management and a relentless focus on customer satisfaction.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-md mt-md"><!-- Card 1: Maritime Excellence --><div class="bg-surface-container-lowest border border-surface-variant p-md rounded-[12px] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col gap-md group"><div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"><span class="material-symbols-outlined text-[28px]">sailing</span></div><div class="flex flex-col gap-2"><h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Maritime Excellence</h3><p class="font-body-md text-body-md text-on-surface-variant">High-quality maritime services for the oil and gas industry in Nigeria and beyond, ensuring operational efficiency.</p></div><a class="mt-auto inline-flex items-center gap-1 font-label-md text-label-md text-primary-container hover:text-primary-container/80 transition-colors" href="about.html">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div><!-- Card 2: Quality Assurance --><div class="bg-surface-container-lowest border border-surface-variant p-md rounded-[12px] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col gap-md group"><div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"><span class="material-symbols-outlined text-[28px]">verified_user</span></div><div class="flex flex-col gap-2"><h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Quality Assurance</h3><p class="font-body-md text-body-md text-on-surface-variant">Committed to the highest standards through our rigorous Quality Management System and continual process improvement.</p></div><a class="mt-auto inline-flex items-center gap-1 font-label-md text-label-md text-primary-container hover:text-primary-container/80 transition-colors" href="about.html">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div><!-- Card 3: Client Focused --><div class="bg-surface-container-lowest border border-surface-variant p-md rounded-[12px] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col gap-md group"><div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors"><span class="material-symbols-outlined text-[28px]">groups</span></div><div class="flex flex-col gap-2"><h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">Client Focused</h3><p class="font-body-md text-body-md text-on-surface-variant">Dedicated to understanding and exceeding the aspirations of our global clients and all interested parties.</p></div><a class="mt-auto inline-flex items-center gap-1 font-label-md text-label-md text-primary-container hover:text-primary-container/80 transition-colors" href="about.html">Learn More <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div></div></section>
+<!-- CTA Banner -->
+<section class="py-xl">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-primary-container rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden shadow-lg">
+<!-- Abstract Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="flex flex-col gap-sm relative z-10 max-w-[600px]">
+<h2 class="font-headline-lg text-headline-lg text-on-primary-container">Ready to move your cargo?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/90">Get a competitive quote in minutes. Our team of experts is standing by to optimize your logistics workflow.</p>
+</div>
+
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary dark:bg-secondary w-full">
+<div class="max-w-container-max mx-auto px-gutter py-xl grid grid-cols-1 md:grid-cols-4 gap-lg">
+<!-- Brand Column -->
+<div class="flex flex-col gap-md">
+<a class="inline-block bg-white p-2 rounded w-fit" href="#">
+<img alt="Rehdors Logistics Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwAmV6fSHltlM8_0k1e_ew3jA9WaX_CvINzpCvoZC-vLBJV6lfkhdsoz2mBjPVgI7jxWX90zUoc3DepOvjfJsBOp_n13m57NGc7o_lt09RyrVanq4ivZCce666NLIrl2-Xp9s2lV6iuko9mJXeBnYtUIKMCilClPZgLPNprHVEECkYv1rtIKVunUkEVBkFNTTdhorZYC-9NHNwT1u1LC0u4ULDT9iirFywlhPEpeeDBf2MgcAfrYzo7Ja-d6xO_hCtig">
+</a>
+<p class="font-body-md text-body-md text-on-secondary/80 max-w-xs">
+                    Engineering precision in global logistics, customs clearance, and freight management.
+                </p>
+<div class="flex gap-4 mt-2">
+<a aria-label="LinkedIn" class="text-on-secondary/80 hover:text-tertiary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">share</span> <!-- Placeholder for actual social icon -->
+</a>
+<a aria-label="Twitter" class="text-on-secondary/80 hover:text-tertiary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-md">
+<h4 class="font-headline-md text-headline-md font-bold text-on-secondary text-[18px]">Services</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li class=""><a class="text-on-secondary/80 hover:text-on-secondary hover:text-tertiary-fixed transition-colors" href="#">Customs Clearing</a></li>
+<li class=""><a class="text-on-secondary/80 hover:text-on-secondary hover:text-tertiary-fixed transition-colors" href="#">Freight Forwarding</a></li>
+<li class=""><a class="text-on-secondary/80 hover:text-on-secondary hover:text-tertiary-fixed transition-colors" href="#">Warehousing</a></li>
+</ul>
+</div>
+<!-- Legal -->
+<div class="flex flex-col gap-md">
+<h4 class="font-headline-md text-headline-md font-bold text-on-secondary text-[18px]">Legal</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md">
+<li class=""><a class="text-on-secondary/80 hover:text-on-secondary hover:text-tertiary-fixed transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-secondary/80 hover:text-on-secondary hover:text-tertiary-fixed transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div class="flex flex-col gap-md">
+<h4 class="font-headline-md text-headline-md font-bold text-on-secondary text-[18px]">Contact Us</h4>
+<ul class="flex flex-col gap-4 font-body-md text-body-md">
+<li class="">
+<a class="flex items-center gap-3 text-on-secondary/80 hover:text-tertiary-fixed transition-colors group" href="mailto:info@rehdors.com">
+<span class="material-symbols-outlined text-tertiary-fixed group-hover:scale-110 transition-transform">mail</span>
+                            info@rehdorslogistics.com
+                        </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 text-on-secondary/80 hover:text-tertiary-fixed transition-colors group" href="tel:+1234567890">
+<span class="material-symbols-outlined text-tertiary-fixed group-hover:scale-110 transition-transform">phone</span>
+                            +234**********
+                        </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter py-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="font-body-md text-body-md text-on-secondary/60 text-sm">© 2026 <span class="text-secondary-fixed-dim">Rehdors</span> <span class="text-primary-container">Logistics</span> Solution Limited. All rights reserved.</p>
+<p class="font-body-md text-body-md text-on-secondary/60 text-sm">Designed by Nexill</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll handler for top nav elevation
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+    <script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  });
+</script>
+
+
+</body></html>
