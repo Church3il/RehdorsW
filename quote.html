@@ -174,9 +174,9 @@
 <!-- TopNavBar (Intent: Linear/Transactional - Suppressed per rules, but user explicitly asked for "Sticky TopNavBar". Contextual override based on direct prompt instruction, though typically suppressed for quotes.) -->
 <nav class="bg-surface dark:bg-surface w-full top-0 sticky shadow-sm z-50">
 <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-16 border-b border-outline-variant dark:border-outline transition-all duration-200 ease-in-out">
-<div class="flex items-center gap-xs">
-<img alt="Rehdors Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1LdCUfTvgvFRIKVZITcpXRuTj2bfwZ1ew3u8Z1x9Q5DRoYz1P6e9g0EJTw9ATCiA3Kci0mjIvPMAnQy6tRq27AXNMPkzOPOiht74ZzhvzT_ZiRh0HsKcysu4T4wPaVlcm6qFQp5UrlIKEZtFhV0jMutOkauMgy6mKnoN21UT_43G-R3MNUoAfv7pQBjUDeE8r8U7KqaZldJCzrGxKvNliRxb90JcV153BxgHmvpaMRn21XUbnTbxoTmZS9FNY7v5_MA">
-<span class="text-headline-md font-headline-md font-bold"><span class="" style="color: rgb(46, 125, 50);">REHDORS</span> <span class="" style="color: rgb(245, 158, 11);">LOGISTICS</span></span>
+<div class="flex items-center gap-xs min-w-0">
+<img alt="Rehdors Logo" class="h-8 w-8 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1LdCUfTvgvFRIKVZITcpXRuTj2bfwZ1ew3u8Z1x9Q5DRoYz1P6e9g0EJTw9ATCiA3Kci0mjIvPMAnQy6tRq27AXNMPkzOPOiht74ZzhvzT_ZiRh0HsKcysu4T4wPaVlcm6qFQp5UrlIKEZtFhV0jMutOkauMgy6mKnoN21UT_43G-R3MNUoAfv7pQBjUDeE8r8U7KqaZldJCzrGxKvNliRxb90JcV153BxgHmvpaMRn21XUbnTbxoTmZS9FNY7v5_MA">
+<span class="text-lg md:text-headline-md font-headline-md font-bold whitespace-nowrap"><span class="" style="color: rgb(46, 125, 50);">REHDORS</span> <span class="" style="color: rgb(245, 158, 11);">LOGISTICS</span></span>
 </div>
 <div class="hidden md:flex gap-md font-body-md text-body-md">
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="index.html">Home</a>
@@ -184,15 +184,16 @@
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="service.html">Services</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="location.html">Location</a>
 </div>
-<button id="mobile-menu-btn" class="md:hidden text-on-surface-variant p-xs" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<button id="mobile-menu-btn" class="md:hidden text-on-surface-variant p-xs shrink-0" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
+</div>
 <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface border-t border-outline-variant">
   <a href="index.html" class="text-on-surface-variant">Home</a>
   <a href="about.html" class="text-on-surface-variant">About</a>
   <a href="services.html" class="text-on-surface-variant">Services</a>
   <a href="location.html" class="text-on-surface-variant">Location</a>
-</div>
+  <a href="index.html" class="bg-primary-container text-on-primary text-center py-3 rounded-lg font-label-md">Go to Home Page</a>
 </div>
 </nav>
 <main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-lg md:py-xl flex flex-col gap-lg">
