@@ -118,20 +118,21 @@
 <a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="service.html">Services</a>
 <a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="location.html">Location</a></nav>
 <!-- Trailing Action -->
-<a class="bg-primary-container text-on-primary-container hover:bg-primary-container/90 active:scale-95 transition-all px-6 py-3 rounded-lg font-label-md text-label-md shadow-sm" href="quote.html">
+<a class="hidden md:inline-flex bg-primary-container text-on-primary-container hover:bg-primary-container/90 active:scale-95 transition-all px-6 py-3 rounded-lg font-label-md text-label-md shadow-sm" href="quote.html">
                     Get a Quote
                 </a>
-</div>
-<!-- Mobile Menu Toggle (Visual only for shell) -->
-<button class="md:hidden text-on-surface-variant"id="mobile-menu-btn" aria-label="Toggle Menu">
+<!-- Mobile Menu Toggle -->
+<div class="relative md:hidden">
+<button class="text-on-surface-variant" id="mobile-menu-btn" aria-label="Toggle Menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface-container-lowest border-t border-outline-variant">
+<div id="mobile-menu" class="hidden absolute top-full right-0 mt-2 w-56 flex-col gap-4 p-4 bg-surface-container-lowest border border-outline-variant rounded-lg shadow-lg z-50">
   <a href="index.html" class="text-on-surface-variant">Home</a>
   <a href="about.html" class="text-on-surface-variant">About</a>
   <a href="services.html" class="text-on-surface-variant">Services</a>
   <a href="location.html" class="text-primary font-bold">Location</a>
   <a href="quote.html" class="bg-primary-container text-on-primary-container text-center py-3 rounded-lg font-label-md">Get a Quote</a>
+</div>
 </div>
 </div>
 </header>

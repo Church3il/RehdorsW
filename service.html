@@ -117,19 +117,16 @@
 <a class="text-[#f59e0b] border-b-2 border-[#f59e0b] pb-1 text-label-md font-label-md" href="services.html">Services</a>
 <a class="text-on-surface-variant hover:text-[#f59e0b] transition-colors duration-200 text-label-md font-label-md" href="location.html">Location</a>
 </nav>
-<a class="bg-primary-container text-on-primary-container hover:bg-primary-container/90 active:scale-95 transition-all px-6 py-3 rounded-lg font-label-md text-label-md shadow-sm" href="quote.html">
-                    Get a Quote
-                </a>
-</div>
-<span class="material-symbols-outlined" style="font-size: 32px;" id="mobile-menu-btn">menu</span>
+<button id="mobile-menu-btn" class="md:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
 </button>
+</div>
 <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface-container-lowest border-t border-outline-variant">
   <a href="index.html" class="text-on-surface-variant">Home</a>
   <a href="about.html" class="text-on-surface-variant">About</a>
   <a href="services.html" class="text-[#f59e0b] font-bold">Services</a>
   <a href="location.html" class="text-on-surface-variant">Location</a>
   <a href="quote.html" class="bg-[#f59e0b] text-white py-3 rounded-lg font-label-md">Get a Quote</a>
-</div>
 </div>
 </header>
 <main class="flex-grow pt-20">
@@ -247,8 +244,9 @@
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('flex');
     mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('flex');
+    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 </script>
 </body></html>

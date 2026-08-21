@@ -184,8 +184,7 @@
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="service.html">Services</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="location.html">Location</a>
 </div>
-<a href="index.html" class="inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-md py-xs rounded hover:bg-primary-container/90 transition-colors" href="#" style="background-color: rgb(245, 158, 11); color: rgb(255, 255, 255);">Go Back</a>
-<button class="md:hidden text-on-surface-variant p-xs">
+<button id="mobile-menu-btn" class="md:hidden text-on-surface-variant p-xs" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
 <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface border-t border-outline-variant">
@@ -193,7 +192,6 @@
   <a href="about.html" class="text-on-surface-variant">About</a>
   <a href="services.html" class="text-on-surface-variant">Services</a>
   <a href="location.html" class="text-on-surface-variant">Location</a>
-  <a href="quote.html" class="bg-[#f59e0b] text-white py-3 rounded-lg font-label-md">Get a Quote</a>
 </div>
 </div>
 </nav>
@@ -274,8 +272,9 @@
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('flex');
     mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('flex');
+    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 </script>
 </body></html>

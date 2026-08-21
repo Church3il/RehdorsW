@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="about.css">
 <script id="tailwind-config">
         tailwind.config = {
@@ -123,18 +122,17 @@
                     Get a Quote
                 </a>
 </div>
-</div>
-<button class="md:hidden text-primary p-xs rounded-md hover:bg-surface-variant transition-colors" id="mobile-menu-btn" aria-label="Toggle Menu">
+<div class="relative md:hidden">
+<button class="text-primary p-xs rounded-md hover:bg-surface-variant transition-colors" id="mobile-menu-btn" aria-label="Toggle Menu">
 <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: &quot;FILL&quot; 0;">menu</span>
 </button>
-<div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-gutter py-4 bg-surface-container-lowest border-t border-surface-variant">
+<div id="mobile-menu" class="hidden absolute top-full right-0 mt-2 w-56 flex-col gap-4 p-4 bg-surface-container-lowest border border-surface-variant rounded-lg shadow-lg z-50">
   <a href="index.html" class="text-on-surface-variant">Home</a>
   <a href="about.html" class="text-primary font-bold">About</a>
   <a href="service.html" class="text-on-surface-variant">Services</a>
   <a href="location.html" class="text-on-surface-variant">Location</a>
   <a href="quote.html" class="bg-primary-container text-on-primary-container text-center py-3 rounded-lg font-label-md">Get a Quote</a>
 </div>
-</nav>
 </div>
 </div>
 </header>
